@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="detailsPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="473.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.DetailsController">
+   <children>
+      <ImageView fx:id="detailsImage" fitHeight="208.0" fitWidth="190.0" layoutX="14.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="detailsName" layoutX="8.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[name]" wrappingWidth="453.125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblSale" layoutX="24.0" layoutY="294.0" prefHeight="50.0" prefWidth="172.0" text="ON SALE" textFill="RED" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="44.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="detailsDescription" editable="false" layoutX="225.0" layoutY="297.0" prefHeight="76.0" prefWidth="200.0" wrapText="true" />
+      <Text fx:id="detailsEndingDate" layoutX="28.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" visible="false" wrappingWidth="161.31689453125">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblEndingDate" layoutX="40.0" layoutY="358.0" text="Sale ending on:" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <Text fx:id="detailsPrice" layoutX="288.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[price]">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="detailsColour" layoutX="301.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[colour]">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Text>
+      <Text fx:id="detailsManufacturer" layoutX="349.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[manufacturer]" wrappingWidth="139.0">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="lblDescription" layoutX="225.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblPrice" layoutX="225.0" layoutY="64.0" prefHeight="26.0" prefWidth="63.0" text="Price:">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrice" layoutX="225.0" layoutY="101.0" prefHeight="26.0" prefWidth="75.0" text="Colour:">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblManufacturer" layoutX="225.0" layoutY="136.0" prefHeight="26.0" prefWidth="121.0" text="Manufacturer:">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnEdit" layoutX="234.0" layoutY="396.0" mnemonicParsing="false" onAction="#btnEditClick" prefHeight="26.0" prefWidth="75.0" text="Edit" textFill="#4800ff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="343.0" layoutY="396.0" mnemonicParsing="false" onAction="#btnDeleteClick" prefHeight="31.0" prefWidth="75.0" text="Delete" textFill="RED">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblStartDate" layoutX="222.0" layoutY="224.0" prefHeight="26.0" prefWidth="127.0" text="Available Since:">
+         <font>
+            <Font name="Berlin Sans FB" size="19.0" />
+         </font>
+      </Label>
+      <Text fx:id="detailsStartDate" layoutX="349.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[starting date]">
+         <font>
+            <Font name="Berlin Sans FB" size="17.0" />
+         </font>
+      </Text>
+      <CheckBox fx:id="chkbOnSale" disable="true" layoutX="204.0" layoutY="311.0" mnemonicParsing="false" prefHeight="6.0" prefWidth="8.0" visible="false" />
+      <DatePicker fx:id="dpStartDate" disable="true" layoutX="343.0" layoutY="225.0" prefHeight="25.0" prefWidth="121.0" visible="false" />
+      <TextField fx:id="txtManufacturer" disable="true" layoutX="348.0" layoutY="138.0" prefHeight="25.0" prefWidth="118.0" visible="false" />
+      <TextField fx:id="txtColour" disable="true" layoutX="306.0" layoutY="102.0" prefHeight="25.0" prefWidth="118.0" visible="false" />
+      <TextField fx:id="txtPrice" disable="true" layoutX="279.0" layoutY="65.0" prefHeight="25.0" prefWidth="118.0" visible="false" />
+      <DatePicker fx:id="dpEndDate" disable="true" layoutX="23.0" layoutY="395.0" visible="false" />
+      <TextField fx:id="txtName" disable="true" layoutX="8.0" layoutY="4.0" prefHeight="38.0" prefWidth="365.0" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </TextField>
+      <Label fx:id="lblType" layoutX="229.0" layoutY="163.0" prefHeight="26.0" prefWidth="75.0" text="Type:">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Label>
+      <Text fx:id="detailsType" layoutX="291.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[type]" wrappingWidth="118.0">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtType" disable="true" layoutX="288.0" layoutY="164.0" prefHeight="25.0" prefWidth="118.0" visible="false" />
+      <Label fx:id="lblStock" layoutX="226.0" layoutY="195.0" prefHeight="26.0" prefWidth="75.0" text="Stock:">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Label>
+      <Text fx:id="detailsStock" layoutX="294.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[stock]" wrappingWidth="118.0">
+         <font>
+            <Font name="Berlin Sans FB" size="23.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtStock" disable="true" layoutX="293.0" layoutY="196.0" prefHeight="25.0" prefWidth="63.0" visible="false" />
+   </children>
+</AnchorPane>
