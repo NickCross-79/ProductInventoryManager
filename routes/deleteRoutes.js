@@ -12,7 +12,7 @@ router.delete('/Products/:id', (req, res) => {
         })
         .catch(err => {
             res.status(500).send(err.message);
-        });;
+        });
 });
 
 export default router;
